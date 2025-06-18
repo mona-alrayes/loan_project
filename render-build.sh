@@ -3,10 +3,10 @@ set -o errexit
 
 # Install system build dependencies
 sudo apt-get update
-sudo apt-get install -y build-essential
+sudo apt-get install -y build-essential python3-dev
 
-# Ensure pip is upgraded
-python -m pip install --upgrade pip
+# Upgrade pip and setuptools
+python -m pip install --upgrade pip setuptools wheel
 
-# Install Python dependencies
+# Install requirements
 pip install -r requirements.txt
