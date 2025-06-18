@@ -1,5 +1,5 @@
-# Use pre-built pandas wheel for Python 3.13
-pandas==2.2.2 --only-binary=:all:
+# Use latest pandas version
+pandas==2.3.0
 
 # Other dependencies
 fastapi==0.109.2
